@@ -67,7 +67,8 @@ def factor_analysis_processing(dataset, model, d=0, metrics=['acc', 'auc', 'nll'
         'num_iter': n_iter,
         'rlog': True,
         'learning_method': 'mcmc',
-        'k2': d
+        'k2': d,
+        'verbose': False
     }
 
     auc_list, acc_list, rmse_list, nll_list = [], [], [], []
